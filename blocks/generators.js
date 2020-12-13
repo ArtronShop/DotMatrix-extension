@@ -126,6 +126,7 @@ Blockly.Python['dot_matrix_scroll_right_to_left'] = function(block) {
 
   var value_text = Blockly.Python.valueToCode(block, 'text', Blockly.Python.ORDER_ATOMIC);
   var value_speed = Blockly.Python.valueToCode(block, 'speed', Blockly.Python.ORDER_ATOMIC);
+  var value_pause = Blockly.Python.valueToCode(block, 'pause', Blockly.Python.ORDER_ATOMIC);
 
   var code = `dot.scrollRightToLeft(${value_text}, ${value_speed} * 1000, ${value_pause})\n`;
   return code;
